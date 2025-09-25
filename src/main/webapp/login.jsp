@@ -82,7 +82,7 @@
                     	out.println(request.getAttribute("msg"));
                     }
                     %>
-                    <form  method="post" action="UserController" id="contactForm" novalidate="novalidate">
+                    <form  method="post" action="UserController"  novalidate="novalidate">
                         
 
                         <div class="control-group">
@@ -92,7 +92,7 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="password" class="form-control" id="subject" autocomplete="current-password"
+                            <input type="password" class="form-control" id="subject" name="password" autocomplete="current-password"
                              placeholder="password"
                                 required="required" data-validation-required-message="Please enter a subject" />
                             <p class="help-block text-danger"></p>
@@ -102,8 +102,7 @@
 <p class="help-block text-danger"></p>
                         </div>
                         <div>
-                           
-                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">login</button>
+<button class="btn btn-primary py-2 px-4" name="action" value="login" type="submit">login</button>                           
                         </div>
                     </form>
                 </div>

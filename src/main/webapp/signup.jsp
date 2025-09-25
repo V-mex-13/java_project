@@ -74,6 +74,13 @@
 
                 <div class="contact-form">
                     <div id="success" ></div>
+                      <%
+                    if(request.getAttribute("msg")!= null)
+                    {
+                    	out.println(request.getAttribute("msg"));
+                    }
+                    %>
+                  
                   <form name="sentMessage" id="contactForm" method="post"  action="UserController">
     <div class="control-group">
         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
